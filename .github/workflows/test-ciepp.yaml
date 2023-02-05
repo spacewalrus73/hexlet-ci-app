@@ -1,7 +1,4 @@
 name: Test ciepp
-on:
-	push:
-		brunches: [ main ]
 jobs:
 	build:
 		runs-on: ${{ matrix.os }}
