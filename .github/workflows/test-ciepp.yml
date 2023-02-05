@@ -1,11 +1,11 @@
 jobs:
 build:
-		runs-on: ${{ matrix.os }}
-		strategy:
-			matrix: [ubuntu-latest, macos-latest]
-		steps:
-			- uses: actions/checkout@v2
-			- uses: actions/setup-node@v1
-			- run: npm install
-			- run: npm run lint
-			- run: make test
+	runs-on: ${{ matrix.os }}
+	strategy:
+		matrix: [ubuntu-latest, macos-latest]
+	steps:
+		- uses: actions/checkout@v2
+		- uses: actions/setup-node@v1
+		- run: npm install
+		- run: npm run lint
+		- run: make test
