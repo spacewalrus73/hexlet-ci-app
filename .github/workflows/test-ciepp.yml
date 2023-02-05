@@ -1,5 +1,5 @@
 jobs:
-	build:
+build:
 		runs-on: ${{ matrix.os }}
 		strategy:
 			matrix: [ubuntu-latest, macos-latest]
