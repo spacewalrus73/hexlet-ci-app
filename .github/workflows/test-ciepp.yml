@@ -12,6 +12,8 @@ jobs:
     - uses: snyk/actions/node@master
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        command: snyk auth
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
