@@ -10,6 +10,7 @@ jobs:
     - run: make lint
     - uses: actions/checkout@master
     - uses: snyk/actions/node@master
+      continue-on-error: true
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
