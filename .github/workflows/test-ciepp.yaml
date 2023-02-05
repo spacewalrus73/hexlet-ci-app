@@ -1,4 +1,3 @@
-name: Test ciepp
 jobs:
 	build:
 		runs-on: ${{ matrix.os }}
