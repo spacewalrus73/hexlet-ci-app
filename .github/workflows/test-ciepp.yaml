@@ -1,6 +1,6 @@
 name: Test ciepp
 on:
-	push: push
+	push:
 jobs:
 	build:
 		runs-on: ${{ matrix.os }}
